@@ -48,4 +48,4 @@ if-stmt -> if ( exp ) stmt-sequence [ else stmt-sequence ]
 if-stmt -> if ( exp ) stmt-sequence [ else stmt-sequence ] endif  
 
 # 示例图片  
-[!图片](https://github.com/Gao-JF/TINY-code-to-AST/blob/main/test.png?raw=true)
+![图片](https://github.com/Gao-JF/TINY-code-to-AST/blob/main/test.png?raw=true)
