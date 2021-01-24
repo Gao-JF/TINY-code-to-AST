@@ -1,0 +1,32 @@
+{ Sample program
+  in TINY language -
+  computes factorial
+}
+read x; { input an integer }
+if ( 0<x ) { don't compute if x <= 0 }
+  fact := 1;    {测试标识符、:=、数字}
+  while(0<>x)    {测试while、<>}
+    fact := fact % x;   {测试%}
+    x := x - 1;   {测试-}
+  endwhile{测试endwhile}
+  for  fact := x to 10 do    {测试for、to}
+    fact := fact ^ x;   {测试^}
+    a:=fact + x;  {测试+}
+    b:=fact / a;  {测试/}
+    repeat    {测试repeat}
+       c:=b+a; 
+    until c=10; {测试until}
+  enddo   {测试enddo}
+else a:=b  {测试else}
+  do  {测试do}
+    fact += fact * x; {测试+=}
+    x := x - 1;
+  while ( 0<=x ); {do while}
+  write fact;  { 测试write}
+endif
+for  fact := x downto 1 do   {for down to}
+    fact := fact ^ x;
+    a:=fact + x /a; {测试运算优先级}
+enddo
+
+write x;
